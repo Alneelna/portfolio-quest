@@ -1,7 +1,7 @@
 // Product design case study layout (used by MOVA). Edit the text below.
 import {SCR,SCR_IMG} from '../data.js'
 import {Head,Meta,Note,Steps,Add} from './shared.jsx'
-const steps=[['Proposal',1],['Brand',1],['Design system',1],['Passenger screens',1],['Full 14 screens',1],['Component library',0],['Move to Figma',0]]
+const steps=[['Idea',1],['User Research',1],['Design system',1],['Full 14 screens',1],['Prototype',1],['Case Study',1]]
 export default function DesignCase({p,onZoom}){
   return <div className="cs">
     <h2 id="mt">{p.n}</h2><div className="stamp">case study</div>

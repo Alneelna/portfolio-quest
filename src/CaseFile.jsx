@@ -1,9 +1,9 @@
 import {Tags,Polas} from './Journal.jsx'
 import Contact from './Contact.jsx'
-import DesignCase from '../src.1/cases/DesignCase.jsx'
-import FrontendCase from '../src.1/cases/FrontendCase.jsx'
-import BackendCase from '../src.1/cases/BackendCase.jsx'
-import GraphicsCase from '../src.1/cases/GraphicsCase.jsx'
+import DesignCase from './cases/DesignCase.jsx'
+import FrontendCase from './cases/FrontendCase.jsx'
+import BackendCase from './cases/BackendCase.jsx'
+import GraphicsCase from './cases/GraphicsCase.jsx'
 // A project's `cs` value in data.js picks its layout. Projects without `cs` get the simple pop-up below.
 const cases={design:DesignCase,frontend:FrontendCase,backend:BackendCase,graphics:GraphicsCase}
 export default function CaseFile({p,onClose,onZoom}){
