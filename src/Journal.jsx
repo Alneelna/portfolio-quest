@@ -1,8 +1,8 @@
 import { camps } from './data.js'
 import Contact from './Contact.jsx'
 export const Tags = ({ list }) => list.map(t => <span className="tag" key={t}>{t}</span>)
-export const Polas = ({ p }) => p.sl.map(([label, k = ''], i) => <div className="pola" key={label + i}>
-  <div className={'img ' + k}>{k === 'route' ? <><span className="rec">CLIP</span><b>🚗</b></> : k === 'term' ? <><span className="rec">CLIP</span><u>$ py manage.py runserver</u></> : k === 'logo' ? <><span className="rec">CLIP</span><b>M</b></> : 'Add image: ' + label}</div>
+export const Polas = ({ p }) => p.sl.map(([label, k = '', src], i) => <div className="pola" key={label + i}>
+  <div className={'img ' + (src ? '' : k)}>{src ? <img src={src} alt={label} /> : k === 'route' ? <><span className="rec">CLIP</span><b>🚗</b></> : k === 'term' ? <><span className="rec">CLIP</span><u>$ py manage.py runserver</u></> : k === 'logo' ? <><span className="rec">CLIP</span><b>M</b></> : 'Add image: ' + label}</div>
   <span className="c">{label}</span></div>)
 export const Card = ({ p, onOpen }) => <div className={'card' + (p.sample ? ' sample' : '')}>
   <span className="st">{p.st}</span><h3>{p.n}</h3><p>{p.b}</p><p><Tags list={p.tags} /></p>

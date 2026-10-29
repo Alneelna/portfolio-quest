@@ -1338,3 +1338,34 @@ body.flat .journal {
         padding: 16px 12px 48px
     }
 }
+
+.code {
+    background: #101820;
+    color: #7CFC98;
+    padding: 12px;
+    overflow-x: auto;
+    font: .8rem/1.5 monospace;
+    border: 2px solid var(--ink);
+    white-space: pre-wrap;
+    margin: 8px 0
+}
+
+.pola .img img,
+.phone div img,
+.big img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.gal .pola {
+    max-width: none;
+    flex: 1 1 200px
+}
+
+.file .cta {
+    text-decoration: none;
+    margin-right: 8px
+}
